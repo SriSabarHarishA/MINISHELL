@@ -1,0 +1,40 @@
+# MiniShell Project
+
+A simple Linux Mini Shell implemented in C.
+
+This project demonstrates:
+- Command parsing
+- Built-in commands
+- External command execution
+- Process creation using fork()
+- execvp() usage
+- Prompt customization
+- Shell environment handling
+
+---
+
+## Features
+
+### Built-in Commands
+- `cd`
+- `pwd`
+- `echo`
+- `exit`
+
+### Special Variables
+- `echo $?` → Last command exit status
+- `echo $$` → Current shell PID
+- `echo $SHELL` → Shell path
+
+### External Commands
+Runs Linux commands using:
+- `fork()`
+- `execvp()`
+- `waitpid()`
+
+Examples:
+```bash
+ls
+date
+cat file.txt
+
